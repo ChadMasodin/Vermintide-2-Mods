@@ -1,0 +1,23 @@
+local mod = get_mod("Gromril Fart SFX")
+mod:echo("[Gromril Fart SFX] loaded")
+local godmode_is_on = false
+    Wwise.load_bank("wwise/chr_vce_hurt_husk")
+    Wwise.load_bank("wwise/Play_career_ability_bardin_ironbreaker_enter")
+mod:hook_safe(StateIngame, "update", function(...)
+    Wwise.load_bank("wwise/chr_vce_hurt_husk") = godmode_is_on
+    Wwise.load_bank("wwise/Play_career_ability_bardin_ironbreaker_enter") = godmode_is_on
+end)
+mod:command("hurt_husk", "Toggles hurt_husk ON or OFF.", function()
+	if godmode_is_on == false then
+        WwiseWorld.trigger_event(Wwise.wwise_world(Managers.world:world("level_world")), Play_career_ability_bardin_ironbreaker_enter)(true, nil, "whatever_string")
+		godmode_is_on = true
+		mod:echo("Play_career")
+	else
+		WwiseWorld.trigger_event(Wwise.wwise_world(Managers.world:world("level_world")), chr_vce_hurt_husk)(false, nil, "whatever_string")
+		godmode_is_on = false
+		mod:echo("hurt_husk")
+	end
+end)
+mod:command("Fartsfx", "", function()
+    local sound = WwiseWorld.trigger_event(Wwise.wwise_world(Managers.world:world("level_world")), "chr_vce_hurt_husk")
+end)

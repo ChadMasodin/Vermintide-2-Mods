@@ -1,0 +1,9 @@
+
+win32 = {
+	banks = [
+		"results/Init"
+	]
+	metadata = "results/project"
+	streams = [
+	]
+}

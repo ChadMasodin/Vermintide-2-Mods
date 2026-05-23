@@ -1,0 +1,49 @@
+
+aux_buses = [
+]
+banks = {
+	Init = {
+		events = [
+		]
+	}
+	Play_career_ability_bardin_ironbreaker_enter = {
+		events = [
+			"Play_career_ability_bardin_ironbreaker_enter"
+		]
+	}
+}
+buses = [
+	"Master Audio Bus"
+	"Motion Factory Bus"
+]
+events = {
+	Play_career_ability_bardin_ironbreaker_enter = {
+		attenuation_max = 50
+		duration_max = 4.337667
+		duration_min = 4.337667
+		duration_type = "OneShot"
+		positioning = "3D"
+	}
+}
+parameters = [
+	"Acoustic_Banner"
+	"Anechoic"
+	"Brick"
+	"Carpet"
+	"Concrete"
+	"Cork_Tiles"
+	"Curtains"
+	"Drywall"
+	"Fabric"
+	"Mountain"
+	"Tile"
+	"Wood"
+	"Wood_Bright"
+	"Wood_Deep"
+]
+state_groups = {
+}
+switch_groups = {
+}
+triggers = [
+]

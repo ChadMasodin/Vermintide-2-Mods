@@ -1,0 +1,14 @@
+mod = [
+	"Gromril Fart SFX"
+]
+
+package = [
+	"resource_packages/Gromril Fart SFX/Gromril Fart SFX"
+]
+
+lua = [
+	"scripts/mods/Gromril Fart SFX/*"
+]
+wwise_bank = [
+  "wwise/*"
+]

@@ -1,0 +1,9 @@
+
+win32 = {
+	banks = [
+		"results/Play_career_ability_bardin_ironbreaker_enter"
+	]
+	metadata = "results/project"
+	streams = [
+	]
+}
