@@ -1,0 +1,11 @@
+mod = [
+	"stamina show"
+]
+
+package = [
+	"resource_packages/stamina show/stamina show"
+]
+
+lua = [
+	"scripts/mods/stamina show/*"
+]
