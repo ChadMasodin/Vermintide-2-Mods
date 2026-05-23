@@ -1,0 +1,11 @@
+mod = [
+	"stamina count ui"
+]
+
+package = [
+	"resource_packages/stamina count ui/stamina count ui"
+]
+
+lua = [
+	"scripts/mods/stamina count ui/*"
+]
