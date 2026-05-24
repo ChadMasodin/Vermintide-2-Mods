@@ -1,0 +1,9 @@
+area_video_celebrate = {
+	material_contexts = {
+	}
+	shader = "gui:YUV_VIDEO"
+	textures = {
+	}
+	variables = {
+	}
+}

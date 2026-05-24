@@ -1,0 +1,15 @@
+mod = [
+	"FOG"
+]
+
+package = [
+	"resource_packages/FOG/FOG"
+]
+
+lua = [
+	"scripts/mods/FOG/*"
+]
+
+ivf = [
+	"video/*"
+]
